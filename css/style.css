@@ -1,0 +1,385 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 1.5rem;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+/* ---- Navbar -------*/
+
+#navbar {
+	background: #f17300;
+	/* margin-bottom: 20px; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* 
+    flex-flow is shorthand for
+    flex-direction: & flex-wrap 
+    */
+	justify-content: flex-end;
+	/* 
+    justify-content: flex-start; is a default 
+    flex-start positions the items at the start
+    of the container
+    */
+	box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.4);
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+.item {
+	/* border: 5px solid whitesmoke; */
+	/* background-color: tomato; */
+	/* font-size: 45px; */
+	padding: 10px;
+	/* margin: 20px; */
+}
+
+.item a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #251f47;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.item a:hover {
+	background: #251f47;
+	color: #cddddd;
+}
+
+/* ---- Navbar End -------*/
+
+/* ---- Welcome Section -----*/
+#welcome-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #2b2d42;
+}
+
+.header {
+	text-align: center;
+}
+
+.header h1 {
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 15px;
+	color: #edf2f4;
+}
+
+.header p {
+	font-size: 1.5rem;
+	color: #edf2f4;
+}
+/* ---- Welcome Section End -----*/
+
+/* ---- Projects/Work Section -----*/
+#projects {
+	/* display: flex;
+    justify-content: center; */
+	/* align-items: center; */
+	/* height: 100vh; */
+	background: #14213d;
+	padding-top: 8%;
+}
+
+header {
+	text-align: center;
+}
+
+header h2 {
+	font-size: 2rem;
+	/* padding: 5px; */
+	color: #f1faee;
+}
+
+header p {
+	font-size: 1.5rem;
+	color: #e5e5e5;
+}
+
+.h-style {
+	color: #f17300;
+	font-size: 2rem;
+}
+
+/* ------------------------
+Projects image rows
+--------------------------- */
+.img-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/* height: 75vh; */
+	margin: 10px 10px 100px 10px;
+	/* padding: 10%; */
+	padding: 10% 0 30% 0;
+}
+
+.project-tile {
+	/* border: solid 5px  #e5e5e5; */
+	/* padding-bottom: 5px; */
+	margin: 5% 2% 0 2%;
+	/* border-radius: 5px; */
+	text-align: center;
+	/* padding: 5px; */
+}
+
+.project-tile img {
+	width: 250px;
+	padding: 0;
+	margin: 0;
+	display: block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+	z-index: 0;
+}
+
+.project-tile a {
+	text-decoration: none;
+	margin: 0 auto;
+	padding: 5px 5px 0 5px;
+	color: #251f47;
+	/* background: #f17300; */
+	display: block;
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.project-tile a:hover {
+	opacity: 0.7;
+}
+
+/* --- Projects/Work Section End ---*/
+
+/* ---- Profile Section -----*/
+#profile {
+	display: block;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+	height: 100vh;
+	background: #023e8a;
+	padding-top: 10%;
+	text-align: center;
+}
+
+.profile-head h2 {
+	font-size: 2rem;
+	padding: 5px;
+	color: #f1faee;
+}
+
+.profile-head p {
+	font-size: 1.5rem;
+	color: #e5e5e5;
+}
+
+.contacts {
+	display: flex;
+	flex-wrap: wrap;
+	/* height: 100vh; */
+	justify-content: space-evenly;
+	/* align-items: center; */
+	margin: 5%;
+	padding-bottom: 10%;
+	color: #e5e5e5;
+}
+
+.contacts a {
+	text-decoration: none;
+	color: #e5e5e5;
+	font-size: 1rem;
+}
+
+.contacts a:hover {
+	color: #f17300;
+	border-bottom: 2px solid #f17300;
+	/* text-decoration: underline; */
+}
+
+#profile-link a {
+	text-decoration: none;
+	color: #e5e5e5;
+	font-size: 1rem;
+}
+
+#profile-link a:hover {
+	color: #f17300;
+	border-bottom: 2px solid #f17300;
+}
+
+/* ---- Profile Section End -----*/
+
+/* ----------------------------------
+            Footer
+-------------------------------------*/
+.footer {
+	border-top: solid #f17300 5px;
+	color: #e5e5e5;
+	padding: 2%;
+	text-align: left;
+}
+
+.footer p {
+	font-size: 0.5em;
+}
+
+/* --------------------------------------
+                 Media Queries
+  -----------------------------------------*/
+
+/* ----------- Navbar------------------ */
+
+@media only screen and (max-width: 700px) {
+	#navbar {
+		background: #f17300;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.item:hover {
+		background: #251f47;
+		color: #cddddd;
+	}
+
+	/* ----------- Navbar  End------------------ */
+
+	/* ---- Welcome Section -----*/
+	#welcome-section {
+		height: 130vh;
+	}
+
+	.header h1 {
+		padding: 30px;
+	}
+	/* ---- Welcome Section End -----*/
+
+	/* ---- Projects/Work Section -----*/
+	#projects {
+		/* padding-top: 60%; */
+		height: 150vh;
+	}
+
+	/* ------------------------
+Projects image rows
+--------------------------- */
+	.img-row {
+		display: flex;
+		flex-direction: column;
+		height: 150vh;
+	}
+
+	.project-tile img {
+		width: 100%;
+	}
+
+	/* --- Projects/Work Section End ---*/
+
+	/* ---- Profile Section -----*/
+	#profile {
+		display: flex;
+		flex-direction: column;
+		padding-top: 60%;
+		height: 130vh;
+	}
+
+	.profile-head h2 {
+		font-size: 1.7rem;
+		padding: 10px;
+		color: #f1faee;
+	}
+
+	.profile-head p {
+		font-size: 1.2rem;
+		color: #e5e5e5;
+	}
+
+	.contacts {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		margin: 5px;
+		padding-bottom: 5%;
+		color: #e5e5e5;
+	}
+
+	.contacts a {
+		text-decoration: none;
+		color: #e5e5e5;
+		font-size: 1rem;
+	}
+
+	/* ---- Profile Section End -----*/
+
+	/* ----------------------------------
+            Footer
+-------------------------------------*/
+	.footer {
+		border-top: solid #f17300 2px;
+		padding: 10px;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#projects {
+		padding-top: 20%;
+	}
+
+	.img-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.project-tile img {
+		width: 100%;
+	}
+
+	/* ------------------------------------------- */
+
+	#profile {
+		display: flex;
+		flex-direction: column;
+		padding-top: 10%;
+		height: 100vh;
+	}
+
+	.profile-head h2 {
+		font-size: 2.5rem;
+		padding: 10px;
+		color: #f1faee;
+	}
+
+	.profile-head p {
+		font-size: 2rem;
+		color: #e5e5e5;
+	}
+
+	.contacts {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		margin: 5px;
+		padding-bottom: 5%;
+		color: #e5e5e5;
+	}
+
+	.contacts a {
+		text-decoration: none;
+		color: #e5e5e5;
+		font-size: 1.5rem;
+		line-height: 2;
+	}
+}
